@@ -9,9 +9,8 @@
 #define AUDIO_SPEAKER_BCLK    26
 #define AUDIO_SPEAKER_LRC     13
 #define AUDIO_SPEAKER_DIN     25
-#define AUDIO_SPEAKER_VOL     20
 
-// audio mic
+// audio microphone
 #define AUDIO_MIC_SD          2
 #define AUDIO_MIC_WS          15
 #define AUDIO_MIC_SCK         4
@@ -33,7 +32,7 @@ void setup() {
   while (!Serial);
   LOG_INFO("Board setup started");
 
-  // speaker
+  // create 2s speaker
   i2s_config_t i2s_speaker_config = {
     .mode = (i2s_mode_t)(I2S_MODE_MASTER | I2S_MODE_TX),
     .sample_rate = AUDIO_SAMPLE_RATE,
@@ -60,7 +59,7 @@ void setup() {
     LOG_ERROR("Failed to set i2s speaker pins");
   }
 
-  // mic
+  // create i2s microphone
   i2s_config_t i2s_mic_config = {
     .mode = (i2s_mode_t)(I2S_MODE_MASTER | I2S_MODE_RX),
     .sample_rate = AUDIO_SAMPLE_RATE,
@@ -87,13 +86,14 @@ void setup() {
     LOG_ERROR("Failed to set i2s mic pins");
   }
 
-  // codec2
+  // run codec2 audio loopback on a separate task
   xTaskCreate(&audio_task, "audio_task", 32000, NULL, 5, &audio_task_);
 
   LOG_INFO("Board setup completed");
 }
 
 void audio_task(void *param) {
+  // construct and configure codec2
   c2_ = codec2_create(CODEC2_MODE_450);
   if (c2_ == NULL) {
     LOG_ERROR("Failed to create Codec2");
@@ -107,6 +107,7 @@ void audio_task(void *param) {
     LOG_INFO("Codec2 constructed", c2_samples_per_frame_, c2_bytes_per_frame_);
   }
 
+  // run loopback record-encode-decode-playback loop
   size_t bytes_read, bytes_written;
   LOG_INFO("Audio task started");
   while(true) {
