@@ -1,0 +1,728 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+A	defines.h	/^    float A[MAX_AMP+1];	  \/* amplitiude of each harmonic                *\/$/;"	m	struct:__anon6
+ALPHA	lpc.c	31;"	d	file:
+BETA	lpc.c	32;"	d	file:
+BG_BETA	postfilter.c	48;"	d	file:
+BG_MARGIN	postfilter.c	49;"	d	file:
+BG_THRESH	postfilter.c	47;"	d	file:
+BPFB_N	bpfb.h	1;"	d
+BPF_N	bpf.h	1;"	d
+C2CONST	defines.h	/^} C2CONST;$/;"	t	typeref:struct:__anon5
+CALLOC	debug_alloc.h	59;"	d
+CALLOC	debug_alloc.h	65;"	d
+CHECK_OVERFLOW_OP	_kiss_fft_guts.h	58;"	d
+CHECK_OVERFLOW_OP	_kiss_fft_guts.h	97;"	d
+CNLP	nlp.c	54;"	d	file:
+CODEC2	codec2_internal.h	/^struct CODEC2 {$/;"	s
+CODEC2_HAVE_VERSION	version.h	30;"	d
+CODEC2_MATH_H	codec2_math.h	2;"	d
+CODEC2_MODE_1200	codec2.h	43;"	d
+CODEC2_MODE_1200_EN	codec2.h	76;"	d
+CODEC2_MODE_1300	codec2.h	42;"	d
+CODEC2_MODE_1300_EN	codec2.h	73;"	d
+CODEC2_MODE_1400	codec2.h	41;"	d
+CODEC2_MODE_1400_EN	codec2.h	70;"	d
+CODEC2_MODE_1600	codec2.h	40;"	d
+CODEC2_MODE_1600_EN	codec2.h	67;"	d
+CODEC2_MODE_2400	codec2.h	39;"	d
+CODEC2_MODE_2400_EN	codec2.h	64;"	d
+CODEC2_MODE_3200	codec2.h	38;"	d
+CODEC2_MODE_3200_EN	codec2.h	61;"	d
+CODEC2_MODE_450	codec2.h	45;"	d
+CODEC2_MODE_450PWB	codec2.h	46;"	d
+CODEC2_MODE_450PWB_EN	codec2.h	85;"	d
+CODEC2_MODE_450_EN	codec2.h	82;"	d
+CODEC2_MODE_700C	codec2.h	44;"	d
+CODEC2_MODE_700C_EN	codec2.h	79;"	d
+CODEC2_MODE_ACTIVE	codec2.h	88;"	d
+CODEC2_MODE_EN_DEFAULT	codec2.h	49;"	d
+CODEC2_RAND_MAX	sine.h	46;"	d
+CODEC2_VERSION	version.h	35;"	d
+CODEC2_VERSION_MAJOR	version.h	32;"	d
+CODEC2_VERSION_MINOR	version.h	33;"	d
+CODEC2_VERSION_PATCH	version.h	34;"	d
+COEFF	nlp.c	47;"	d	file:
+COMP	comp.h	/^} COMP;$/;"	t	typeref:struct:__anon4
+C_ADD	_kiss_fft_guts.h	100;"	d
+C_ADDTO	_kiss_fft_guts.h	112;"	d
+C_FIXDIV	_kiss_fft_guts.h	76;"	d
+C_FIXDIV	_kiss_fft_guts.h	90;"	d
+C_MUL	_kiss_fft_guts.h	69;"	d
+C_MUL	_kiss_fft_guts.h	87;"	d
+C_MULBYSCALAR	_kiss_fft_guts.h	80;"	d
+C_MULBYSCALAR	_kiss_fft_guts.h	91;"	d
+C_SUB	_kiss_fft_guts.h	106;"	d
+C_SUBFROM	_kiss_fft_guts.h	119;"	d
+DEBUG_ALLOC_H	debug_alloc.h	9;"	d
+DEBUG_CALLOC	debug_alloc.h	/^  static inline void * DEBUG_CALLOC(const char *func, size_t nmemb, size_t size) {$/;"	f
+DEBUG_FREE	debug_alloc.h	/^  static inline void DEBUG_FREE(const char *func, void *ptr) {$/;"	f
+DEBUG_MALLOC	debug_alloc.h	/^  static inline void * DEBUG_MALLOC(const char *func, size_t size) {$/;"	f
+DEC	nlp.c	49;"	d	file:
+DIVSCALAR	_kiss_fft_guts.h	73;"	d
+DRIVERS_FREEDV_CODEC2_FFT_H_	codec2_fft.h	9;"	d
+E_BITS	quantise.h	36;"	d
+E_LEVELS	quantise.h	37;"	d
+E_MAX_DB	quantise.h	39;"	d
+E_MIN_DB	quantise.h	38;"	d
+F0_MAX	nlp.c	53;"	d	file:
+FDMDV_OS	nlp.c	59;"	d	file:
+FDMDV_OS_TAPS_16K	nlp.c	60;"	d	file:
+FDMDV_OS_TAPS_8K	nlp.c	61;"	d	file:
+FFTI_FACTOR	sine.c	655;"	d	file:
+FFT_DEC	defines.h	50;"	d
+FFT_ENC	defines.h	49;"	d
+FRACBITS	_kiss_fft_guts.h	46;"	d
+FRACBITS	_kiss_fft_guts.h	50;"	d
+FREE	debug_alloc.h	60;"	d
+FREE	debug_alloc.h	67;"	d
+Fs	codec2_internal.h	/^    int           Fs;$/;"	m	struct:CODEC2
+Fs	defines.h	/^    int   Fs;            \/* sample rate of this instance             *\/$/;"	m	struct:__anon5
+Fs	nlp.c	/^    int           Fs;                \/* sample rate in Hz            *\/$/;"	m	struct:__anon7	file:
+HALF_OF	_kiss_fft_guts.h	130;"	d
+HALF_OF	_kiss_fft_guts.h	134;"	d
+HALF_OF	_kiss_fft_guts.h	138;"	d
+HPF_BETA	sine.c	42;"	d	file:
+HT_N	ht_coeff.h	4;"	d
+IndexMask	pack.c	/^static const unsigned int	IndexMask = 0x7;$/;"	v	file:
+KISS_FFT_COS	_kiss_fft_guts.h	128;"	d
+KISS_FFT_COS	_kiss_fft_guts.h	132;"	d
+KISS_FFT_COS	_kiss_fft_guts.h	136;"	d
+KISS_FFT_FREE	kiss_fft.h	30;"	d
+KISS_FFT_FREE	kiss_fft.h	33;"	d
+KISS_FFT_H	kiss_fft.h	2;"	d
+KISS_FFT_MALLOC	kiss_fft.h	29;"	d
+KISS_FFT_MALLOC	kiss_fft.h	32;"	d
+KISS_FFT_SIN	_kiss_fft_guts.h	129;"	d
+KISS_FFT_SIN	_kiss_fft_guts.h	133;"	d
+KISS_FFT_SIN	_kiss_fft_guts.h	137;"	d
+KISS_FFT_TMP_ALLOC	_kiss_fft_guts.h	159;"	d
+KISS_FFT_TMP_ALLOC	_kiss_fft_guts.h	162;"	d
+KISS_FFT_TMP_FREE	_kiss_fft_guts.h	160;"	d
+KISS_FFT_TMP_FREE	_kiss_fft_guts.h	163;"	d
+KISS_FTR_H	kiss_fftr.h	2;"	d
+L	defines.h	/^    int   L;		  \/* number of harmonics                        *\/$/;"	m	struct:__anon6
+LPCNET_FREQ_MAX_BANDS	lpcnet_freq.h	37;"	d
+LPCPF_BETA	quantise.h	48;"	d
+LPCPF_GAMMA	quantise.h	47;"	d
+LPC_MAX_N	lpc.c	28;"	d	file:
+LPC_MAX_ORDER	lpc.h	31;"	d
+LPC_ORD	defines.h	52;"	d
+LPC_ORD_LOW	defines.h	53;"	d
+LSPD_SCALAR_INDEXES	quantise.h	42;"	d
+LSP_DELTA1	quantise.c	46;"	d	file:
+LSP_PRED_VQ_INDEXES	quantise.h	43;"	d
+LSP_SCALAR_INDEXES	quantise.h	41;"	d
+MALLOC	debug_alloc.h	58;"	d
+MALLOC	debug_alloc.h	63;"	d
+MAXFACTORS	_kiss_fft_guts.h	22;"	d
+MAX_AMP	defines.h	42;"	d
+MAX_ENTRIES	quantise.c	207;"	d	file:
+MAX_STR	defines.h	47;"	d
+MBEST	mbest.h	/^struct MBEST {$/;"	s
+MBEST_LIST	mbest.h	/^struct MBEST_LIST {$/;"	s
+MBEST_STAGES	mbest.h	33;"	d
+MIN	quantise.c	206;"	d	file:
+MODEL	defines.h	/^} MODEL;$/;"	t	typeref:struct:__anon6
+M_PITCH_S	defines.h	57;"	d
+NEWAMP1_K	newamp1.h	35;"	d
+NEWAMP1_N_INDEXES	newamp1.h	33;"	d
+NEWAMP1_PHASE_NFFT	newamp1.h	34;"	d
+NEWAMP1_VQ_MBEST_DEPTH	newamp1.h	36;"	d
+NEWAMP2_16K_K	newamp2.h	38;"	d
+NEWAMP2_K	newamp2.h	37;"	d
+NEWAMP2_N_INDEXES	newamp2.h	35;"	d
+NEWAMP2_PHASE_NFFT	newamp2.h	36;"	d
+NLP	nlp.c	/^} NLP;$/;"	t	typeref:struct:__anon7	file:
+NLP_NTAP	nlp.c	55;"	d	file:
+N_S	defines.h	40;"	d
+OPTPARSE_API	optparse.h	51;"	d
+OPTPARSE_H	optparse.h	48;"	d
+OPTPARSE_MSG_INVALID	optparse.h	120;"	d
+OPTPARSE_MSG_MISSING	optparse.h	121;"	d
+OPTPARSE_MSG_TOOMANY	optparse.h	122;"	d
+OPTPARSE_NONE	optparse.h	/^    OPTPARSE_NONE,$/;"	e	enum:optparse_argtype
+OPTPARSE_OPTIONAL	optparse.h	/^    OPTPARSE_OPTIONAL$/;"	e	enum:optparse_argtype
+OPTPARSE_REQUIRED	optparse.h	/^    OPTPARSE_REQUIRED,$/;"	e	enum:optparse_argtype
+PE_FFT_SIZE	nlp.c	48;"	d	file:
+PHI0_H	phi0.h	3;"	d
+PI	defines.h	44;"	d
+PI	lpc.c	29;"	d	file:
+PI	nlp.c	51;"	d	file:
+PMAX_M	nlp.c	46;"	d	file:
+POW10F	defines.h	115;"	d
+POW10F	defines.h	117;"	d
+PROFILE	nlp.c	32;"	d	file:
+PROFILE	quantise.c	43;"	d	file:
+PROFILE_SAMPLE	machdep.h	34;"	d
+PROFILE_SAMPLE	machdep.h	41;"	d
+PROFILE_SAMPLE_AND_LOG	machdep.h	35;"	d
+PROFILE_SAMPLE_AND_LOG	machdep.h	42;"	d
+PROFILE_SAMPLE_AND_LOG2	machdep.h	37;"	d
+PROFILE_SAMPLE_AND_LOG2	machdep.h	43;"	d
+PROFILE_VAR	machdep.h	33;"	d
+PROFILE_VAR	machdep.h	40;"	d
+P_MAX_S	defines.h	59;"	d
+P_MIN_S	defines.h	58;"	d
+Pn	codec2_internal.h	/^    float        *Pn;	                   \/* [2*n_samp] trapezoidal synthesis window   *\/$/;"	m	struct:CODEC2
+SAMPLE_RATE	nlp.c	50;"	d	file:
+SAMPPROD	_kiss_fft_guts.h	47;"	d
+SAMPPROD	_kiss_fft_guts.h	51;"	d
+SAMP_MAX	_kiss_fft_guts.h	48;"	d
+SAMP_MAX	_kiss_fft_guts.h	52;"	d
+SAMP_MIN	_kiss_fft_guts.h	55;"	d
+SI16	phi0.c	11;"	d	file:
+SQUARE	lpcnet_freq.c	41;"	d	file:
+SSBFILT_CENTRE	ssbfilt_coeff.h	7;"	d
+SSBFILT_N	ssbfilt_coeff.h	4;"	d
+S_MUL	_kiss_fft_guts.h	67;"	d
+S_MUL	_kiss_fft_guts.h	86;"	d
+ShiftRight	pack.c	/^static const unsigned int	ShiftRight = 3;$/;"	v	file:
+Sn	codec2_internal.h	/^    float        *Sn;                      \/* [m_pitch] input speech                    *\/$/;"	m	struct:CODEC2
+Sn16k	nlp.c	/^    float        *Sn16k;	     \/* Fs=16kHz input speech vector *\/$/;"	m	struct:__anon7	file:
+Sn_	codec2_internal.h	/^    float        *Sn_;	                   \/* [2*n_samp] synthesised output speech      *\/$/;"	m	struct:CODEC2
+T	nlp.c	52;"	d	file:
+TWO_PI	defines.h	46;"	d
+TW_S	defines.h	41;"	d
+USE_KISS_FFT	codec2_fft.h	18;"	d
+V_THRESH	defines.h	51;"	d
+W	codec2_internal.h	/^    float         W[FFT_ENC];	           \/* DFT of w[]                                *\/$/;"	m	struct:CODEC2
+WO_BITS	quantise.h	32;"	d
+WO_DT_BITS	quantise.h	34;"	d
+WO_E_BITS	quantise.h	45;"	d
+WO_LEVELS	quantise.h	33;"	d
+Wo	defines.h	/^    float Wo;		  \/* fundamental frequency estimate in radians  *\/$/;"	m	struct:__anon6
+Wo_left	codec2_internal.h	/^    float          Wo_left;$/;"	m	struct:CODEC2
+Wo_max	defines.h	/^    float Wo_max;  $/;"	m	struct:__anon5
+Wo_min	defines.h	/^    float Wo_min;        $/;"	m	struct:__anon5
+WordSize	pack.c	/^static const unsigned int	WordSize = 8;$/;"	v	file:
+__CODEC2_INTERNAL__	codec2_internal.h	30;"	d
+__CODEC2__	codec2.h	30;"	d
+__COMP_PRIM__	comp_prim.h	29;"	d
+__COMP__	comp.h	29;"	d
+__DEFINES__	defines.h	29;"	d
+__DUMP__	dump.h	27;"	d
+__EMBEDDED__	defines.h	38;"	d
+__FILTER__	filter.h	19;"	d
+__GP_INTERLEAVER__	gp_interleaver.h	32;"	d
+__INTERP__	interp.h	29;"	d
+__LPCNET_FREQ__	lpcnet_freq.h	35;"	d
+__LPC__	lpc.h	29;"	d
+__LSP__	lsp.h	32;"	d
+__MACHDEP__	machdep.h	30;"	d
+__MBEST__	mbest.h	31;"	d
+__MEMTOOLS__	memtools.h	9;"	d
+__NEWAMP1__	newamp1.h	31;"	d
+__NEWAMP2__	newamp2.h	33;"	d
+__NLP__	nlp.h	29;"	d
+__PHASE__	phase.h	29;"	d
+__POSTFILTER__	postfilter.h	29;"	d
+__QUANTISE__	quantise.h	27;"	d
+__SINE__	sine.h	29;"	d
+aks_to_M2	quantise.c	/^void aks_to_M2($/;"	f
+analyse_one_frame	codec2.c	/^void analyse_one_frame(struct CODEC2 *c2, MODEL *model, short speech[])$/;"	f
+apply_lpc_correction	quantise.c	/^void apply_lpc_correction(MODEL *model)$/;"	f
+argtype	optparse.h	/^    enum optparse_argtype argtype;$/;"	m	struct:optparse_long	typeref:enum:optparse_long::optparse_argtype
+argv	optparse.h	/^    char **argv;$/;"	m	struct:optparse
+autocorrelate	lpc.c	/^void autocorrelate($/;"	f
+b_table	gp_interleaver.c	/^static const int b_table[] = {$/;"	v	file:
+bass_boost	codec2_internal.h	/^    int           bass_boost;              \/* LPC post filter bass boost                *\/$/;"	m	struct:CODEC2
+beta	codec2_internal.h	/^    float         beta;                    \/* LPC post filter parameters                *\/$/;"	m	struct:CODEC2
+bg_est	codec2_internal.h	/^    float         bg_est;                  \/* background noise estimate for post filter *\/$/;"	m	struct:CODEC2
+bpf	bpf.h	/^float bpf[]={$/;"	v
+bpf_buf	codec2_internal.h	/^    float        *bpf_buf;                 \/* buffer for band pass filter               *\/$/;"	m	struct:CODEC2
+bpfb	bpfb.h	/^float bpfb[]={$/;"	v
+bw_expand_lsps	quantise.c	/^void bw_expand_lsps(float lsp[], int order, float min_sep_low, float min_sep_high)$/;"	f
+bw_expand_lsps2	quantise.c	/^void bw_expand_lsps2(float lsp[],$/;"	f
+c2_file_magic	c2file.h	/^const char c2_file_magic[3] = {0xc0, 0xde, 0xc2};$/;"	v
+c2_header	c2file.h	/^struct c2_header {$/;"	s
+c2const	codec2_internal.h	/^    C2CONST       c2const;$/;"	m	struct:CODEC2
+c2const_create	sine.c	/^C2CONST c2const_create(int Fs, float framelength_s) {$/;"	f
+cBuf	filter.h	/^    complex float * cBuf;      \/\/ auxiliary buffer for interpolation$/;"	m	struct:quisk_cfFilter
+cSamples	filter.h	/^    complex float * cSamples;  \/\/ storage for old samples$/;"	m	struct:quisk_cfFilter
+cabsolute	comp_prim.h	/^inline static float cabsolute(COMP a)$/;"	f
+cadd	comp_prim.h	/^inline static COMP cadd(COMP a, COMP b)$/;"	f
+cb	defines.h	/^  const float        *cb;	  \/* The elements		*\/$/;"	m	struct:lsp_codebook
+cb	defines.h	/^  float              *cb;	  \/* The elements		*\/$/;"	m	struct:lsp_codebook
+cconj	comp_prim.h	/^inline static COMP cconj(COMP a)$/;"	f
+cheb_poly_eva	lsp.c	/^cheb_poly_eva(float *coef,float x,int order)$/;"	f	file:
+check_lsp_order	quantise.c	/^int check_lsp_order(float lsp[], int order)$/;"	f
+choose_interleaver_b	gp_interleaver.c	/^int choose_interleaver_b(int Nbits)$/;"	f
+cmplx	filter.c	27;"	d	file:
+cmult	comp_prim.h	/^inline static COMP cmult(COMP a, COMP b)$/;"	f
+cneg	comp_prim.h	/^inline static COMP cneg(COMP a)$/;"	f
+codec2_700c_eq	codec2.c	/^void codec2_700c_eq(struct CODEC2 *codec2_state, int en) {$/;"	f
+codec2_700c_post_filter	codec2.c	/^void codec2_700c_post_filter(struct CODEC2 *codec2_state, int en) {$/;"	f
+codec2_bits_per_frame	codec2.c	/^int codec2_bits_per_frame(struct CODEC2 *c2) {$/;"	f
+codec2_bytes_per_frame	codec2.c	/^int codec2_bytes_per_frame(struct CODEC2 *c2) {$/;"	f
+codec2_calloc	debug_alloc.h	26;"	d
+codec2_calloc	memtools.c	/^void* codec2_calloc(size_t nmemb, size_t size)$/;"	f
+codec2_complex_dot_product_f32	codec2_math_arm.c	/^void codec2_complex_dot_product_f32(COMP* leftHandSideComplexVector, COMP* rightHandSideComplexVector, size_t vectorLength, float* resultReal, float* resultImag)$/;"	f
+codec2_create	codec2.c	/^struct CODEC2 * codec2_create(int mode)$/;"	f
+codec2_decode	codec2.c	/^void codec2_decode(struct CODEC2 *c2, short speech[], const unsigned char *bytes)$/;"	f
+codec2_decode_1200	codec2.c	/^void codec2_decode_1200(struct CODEC2 *c2, short speech[], const unsigned char * bits)$/;"	f
+codec2_decode_1300	codec2.c	/^void codec2_decode_1300(struct CODEC2 *c2, short speech[], const unsigned char * bits, float ber_est)$/;"	f
+codec2_decode_1400	codec2.c	/^void codec2_decode_1400(struct CODEC2 *c2, short speech[], const unsigned char * bits)$/;"	f
+codec2_decode_1600	codec2.c	/^void codec2_decode_1600(struct CODEC2 *c2, short speech[], const unsigned char * bits)$/;"	f
+codec2_decode_2400	codec2.c	/^void codec2_decode_2400(struct CODEC2 *c2, short speech[], const unsigned char * bits)$/;"	f
+codec2_decode_3200	codec2.c	/^void codec2_decode_3200(struct CODEC2 *c2, short speech[], const unsigned char * bits)$/;"	f
+codec2_decode_450	codec2.c	/^void codec2_decode_450(struct CODEC2 *c2, short speech[], const unsigned char * bits)$/;"	f
+codec2_decode_450pwb	codec2.c	/^void codec2_decode_450pwb(struct CODEC2 *c2, short speech[], const unsigned char * bits)$/;"	f
+codec2_decode_700c	codec2.c	/^void codec2_decode_700c(struct CODEC2 *c2, short speech[], const unsigned char * bits)$/;"	f
+codec2_decode_ber	codec2.c	/^void codec2_decode_ber(struct CODEC2 *c2, short speech[], const unsigned char *bits, float ber_est)$/;"	f
+codec2_destroy	codec2.c	/^void codec2_destroy(struct CODEC2 *c2)$/;"	f
+codec2_dot_product_f32	codec2_math_arm.c	/^void codec2_dot_product_f32(float* leftHandSideRealVector, float* rightHandSideRealVector, size_t vectorLength, float* resultReal) $/;"	f
+codec2_enable_user_ratek	codec2.c	/^float *codec2_enable_user_ratek(struct CODEC2 *codec2_state, int *K) {$/;"	f
+codec2_encode	codec2.c	/^void codec2_encode(struct CODEC2 *c2, unsigned char *bytes, short speech[])$/;"	f
+codec2_encode_1200	codec2.c	/^void codec2_encode_1200(struct CODEC2 *c2, unsigned char * bits, short speech[])$/;"	f
+codec2_encode_1300	codec2.c	/^void codec2_encode_1300(struct CODEC2 *c2, unsigned char * bits, short speech[])$/;"	f
+codec2_encode_1400	codec2.c	/^void codec2_encode_1400(struct CODEC2 *c2, unsigned char * bits, short speech[])$/;"	f
+codec2_encode_1600	codec2.c	/^void codec2_encode_1600(struct CODEC2 *c2, unsigned char * bits, short speech[])$/;"	f
+codec2_encode_2400	codec2.c	/^void codec2_encode_2400(struct CODEC2 *c2, unsigned char * bits, short speech[])$/;"	f
+codec2_encode_3200	codec2.c	/^void codec2_encode_3200(struct CODEC2 *c2, unsigned char * bits, short speech[])$/;"	f
+codec2_encode_450	codec2.c	/^void codec2_encode_450(struct CODEC2 *c2, unsigned char * bits, short speech[])$/;"	f
+codec2_encode_700c	codec2.c	/^void codec2_encode_700c(struct CODEC2 *c2, unsigned char * bits, short speech[])$/;"	f
+codec2_energy_450	codec2.c	/^float codec2_energy_450(struct CODEC2 *c2, const unsigned char * bits)$/;"	f
+codec2_energy_700c	codec2.c	/^float codec2_energy_700c(struct CODEC2 *c2, const unsigned char * bits)$/;"	f
+codec2_fft	codec2_fft.h	/^static inline void codec2_fft(codec2_fft_cfg cfg, codec2_fft_cpx* in, codec2_fft_cpx* out)$/;"	f
+codec2_fft_alloc	codec2_fft.c	/^codec2_fft_cfg codec2_fft_alloc(int nfft, int inverse_fft, void* mem, size_t* lenmem)$/;"	f
+codec2_fft_cfg	codec2_fft.h	/^    typedef kiss_fft_cfg codec2_fft_cfg;$/;"	t
+codec2_fft_cfg	codec2_fft.h	/^  typedef codec2_fft_struct* codec2_fft_cfg;$/;"	t
+codec2_fft_cpx	codec2_fft.h	/^typedef COMP    codec2_fft_cpx;$/;"	t
+codec2_fft_free	codec2_fft.c	/^void codec2_fft_free(codec2_fft_cfg cfg)$/;"	f
+codec2_fft_inplace	codec2_fft.c	/^void codec2_fft_inplace(codec2_fft_cfg cfg, codec2_fft_cpx* inout)$/;"	f
+codec2_fft_scalar	codec2_fft.h	/^    typedef kiss_fft_scalar codec2_fft_scalar;$/;"	t
+codec2_fft_scalar	codec2_fft.h	/^  typedef float32_t codec2_fft_scalar;$/;"	t
+codec2_fft_struct	codec2_fft.h	/^    } codec2_fft_struct;$/;"	t	typeref:struct:__anon2
+codec2_fftr	codec2_fft.h	/^static inline void codec2_fftr(codec2_fftr_cfg cfg, codec2_fft_scalar* in, codec2_fft_cpx* out)$/;"	f
+codec2_fftr_alloc	codec2_fft.c	/^codec2_fftr_cfg codec2_fftr_alloc(int nfft, int inverse_fft, void* mem, size_t* lenmem)$/;"	f
+codec2_fftr_cfg	codec2_fft.h	/^    typedef kiss_fftr_cfg codec2_fftr_cfg;$/;"	t
+codec2_fftr_cfg	codec2_fft.h	/^  typedef codec2_fftr_struct* codec2_fftr_cfg;$/;"	t
+codec2_fftr_free	codec2_fft.c	/^void codec2_fftr_free(codec2_fftr_cfg cfg)$/;"	f
+codec2_fftr_struct	codec2_fft.h	/^  } codec2_fftr_struct;$/;"	t	typeref:struct:__anon1
+codec2_fftri	codec2_fft.h	/^static inline void codec2_fftri(codec2_fftr_cfg cfg, codec2_fft_cpx* in, codec2_fft_scalar* out)$/;"	f
+codec2_free	debug_alloc.h	27;"	d
+codec2_free	memtools.c	/^void codec2_free(void* ptr)$/;"	f
+codec2_get_energy	codec2.c	/^float codec2_get_energy(struct CODEC2 *c2, const unsigned char *bits)$/;"	f
+codec2_get_spare_bit_index	codec2.c	/^int codec2_get_spare_bit_index(struct CODEC2 *c2)$/;"	f
+codec2_get_var	codec2.c	/^float codec2_get_var(struct CODEC2 *codec2_state) {$/;"	f
+codec2_load_codebook	codec2.c	/^void codec2_load_codebook(struct CODEC2 *codec2_state, int num, char *filename) {$/;"	f
+codec2_malloc	debug_alloc.h	25;"	d
+codec2_malloc	memtools.c	/^void* codec2_malloc(size_t size)$/;"	f
+codec2_open_mlfeat	codec2.c	/^void codec2_open_mlfeat(struct CODEC2 *codec2_state, char *feat_fn, char *model_fn) {$/;"	f
+codec2_rand	sine.c	/^int codec2_rand(void) {$/;"	f
+codec2_rebuild_spare_bit	codec2.c	/^int codec2_rebuild_spare_bit(struct CODEC2 *c2, char unpacked_bits[])$/;"	f
+codec2_samples_per_frame	codec2.c	/^int codec2_samples_per_frame(struct CODEC2 *c2) {$/;"	f
+codec2_set_lpc_post_filter	codec2.c	/^void codec2_set_lpc_post_filter(struct CODEC2 *c2, int enable, int bass_boost, float beta, float gamma)$/;"	f
+codec2_set_natural_or_gray	codec2.c	/^void codec2_set_natural_or_gray(struct CODEC2 *c2, int gray)$/;"	f
+codec2_set_softdec	codec2.c	/^void codec2_set_softdec(struct CODEC2 *c2, float *softdec)$/;"	f
+codes0	codebook.c	/^static const float codes0[] = {$/;"	v	file:
+codes0	codebookd.c	/^static const float codes0[] = {$/;"	v	file:
+codes0	codebookge.c	/^static const float codes0[] = {$/;"	v	file:
+codes0	codebookjmv.c	/^static const float codes0[] = {$/;"	v	file:
+codes0	codebookjvm.c	/^static const float codes0[] = {$/;"	v	file:
+codes0	codebooklspmelvq.c	/^static float codes0[] = {$/;"	v	file:
+codes0	codebookmel.c	/^static float codes0[] = {$/;"	v	file:
+codes0	codebooknewamp1.c	/^static const float codes0[] = {$/;"	v	file:
+codes0	codebooknewamp1_energy.c	/^static const float codes0[] = {$/;"	v	file:
+codes0	codebooknewamp2.c	/^static const float codes0[] = {$/;"	v	file:
+codes0	codebooknewamp2_energy.c	/^static const float codes0[] = {$/;"	v	file:
+codes1	codebook.c	/^static const float codes1[] = {$/;"	v	file:
+codes1	codebookd.c	/^static const float codes1[] = {$/;"	v	file:
+codes1	codebookjmv.c	/^static const float codes1[] = {$/;"	v	file:
+codes1	codebookjvm.c	/^static const float codes1[] = {$/;"	v	file:
+codes1	codebooklspmelvq.c	/^static float codes1[] = {$/;"	v	file:
+codes1	codebookmel.c	/^static float codes1[] = {$/;"	v	file:
+codes1	codebooknewamp1.c	/^static const float codes1[] = {$/;"	v	file:
+codes2	codebook.c	/^static const float codes2[] = {$/;"	v	file:
+codes2	codebookd.c	/^static const float codes2[] = {$/;"	v	file:
+codes2	codebookjmv.c	/^static const float codes2[] = {$/;"	v	file:
+codes2	codebookjvm.c	/^static const float codes2[] = {$/;"	v	file:
+codes2	codebooklspmelvq.c	/^static float codes2[] = {$/;"	v	file:
+codes2	codebookmel.c	/^static float codes2[] = {$/;"	v	file:
+codes3	codebook.c	/^static const float codes3[] = {$/;"	v	file:
+codes3	codebookd.c	/^static const float codes3[] = {$/;"	v	file:
+codes3	codebookmel.c	/^static float codes3[] = {$/;"	v	file:
+codes4	codebook.c	/^static const float codes4[] = {$/;"	v	file:
+codes4	codebookd.c	/^static const float codes4[] = {$/;"	v	file:
+codes4	codebookmel.c	/^static float codes4[] = {$/;"	v	file:
+codes5	codebook.c	/^static const float codes5[] = {$/;"	v	file:
+codes5	codebookd.c	/^static const float codes5[] = {$/;"	v	file:
+codes5	codebookmel.c	/^static float codes5[] = {$/;"	v	file:
+codes6	codebook.c	/^static const float codes6[] = {$/;"	v	file:
+codes6	codebookd.c	/^static const float codes6[] = {$/;"	v	file:
+codes7	codebook.c	/^static const float codes7[] = {$/;"	v	file:
+codes7	codebookd.c	/^static const float codes7[] = {$/;"	v	file:
+codes8	codebook.c	/^static const float codes8[] = {$/;"	v	file:
+codes8	codebookd.c	/^static const float codes8[] = {$/;"	v	file:
+codes9	codebook.c	/^static const float codes9[] = {$/;"	v	file:
+codes9	codebookd.c	/^static const float codes9[] = {$/;"	v	file:
+comp0	comp_prim.h	/^inline static COMP comp0(){$/;"	f
+comp_exp_j	comp_prim.h	/^inline static COMP comp_exp_j(float phi){$/;"	f
+comp_mag_gt	comp_prim.h	/^inline static int comp_mag_gt(COMP a,COMP b){$/;"	f
+comp_normalize	comp_prim.h	/^inline static COMP comp_normalize(COMP a){$/;"	f
+compute_weights	quantise.c	/^void compute_weights(const float *x, float *w, int ndim)$/;"	f
+compute_weights2	quantise.c	/^void compute_weights2(const float *x, const float *xp, float *w)$/;"	f
+cpxCoefs	filter.h	/^    complex float * cpxCoefs;  \/\/ complex filter coefficients$/;"	m	struct:quisk_cfFilter
+csub	comp_prim.h	/^inline static COMP csub(COMP a, COMP b){$/;"	f
+dCoefs	filter.h	/^    float * dCoefs;            \/\/ real filter coefficients$/;"	m	struct:quisk_cfFilter
+de_emp	lpc.c	/^void de_emp($/;"	f
+decim_index	filter.h	/^    int decim_index;           \/\/ index of next sample for decimation$/;"	m	struct:quisk_cfFilter
+decode	codec2_internal.h	/^    void (*decode)(struct CODEC2 *c2, short speech[], const unsigned char * bits);$/;"	m	struct:CODEC2
+decode_Wo	quantise.c	/^float decode_Wo(C2CONST *c2const, int index, int bits)$/;"	f
+decode_WoE	quantise.c	/^void decode_WoE(C2CONST *c2const, MODEL *model, float *e, float xq[], int n1)$/;"	f
+decode_ber	codec2_internal.h	/^    void (*decode_ber)(struct CODEC2 *c2, short speech[], const unsigned char * bits, float ber_est);$/;"	m	struct:CODEC2
+decode_energy	quantise.c	/^float decode_energy(int index, int bits)$/;"	f
+decode_log_Wo	quantise.c	/^float decode_log_Wo(C2CONST *c2const, int index, int bits)$/;"	f
+decode_lspds_scalar	quantise.c	/^void decode_lspds_scalar($/;"	f
+decode_lsps_scalar	quantise.c	/^void decode_lsps_scalar(float lsp[], int indexes[], int order)$/;"	f
+decode_lsps_vq	quantise.c	/^void decode_lsps_vq(int *indexes, float *xq, int order, int stages)$/;"	f
+determine_autoc	newamp1.c	/^void determine_autoc(C2CONST *c2const, float Rk[], int order, MODEL *model, int Nfft, codec2_fft_cfg fwd_cfg, codec2_fft_cfg inv_cfg)$/;"	f
+determine_phase	newamp1.c	/^void determine_phase(C2CONST *c2const, COMP H[], MODEL *model, int Nfft, codec2_fft_cfg fwd_cfg, codec2_fft_cfg inv_cfg)$/;"	f
+dft_speech	sine.c	/^void dft_speech(C2CONST *c2const, codec2_fft_cfg fft_fwd_cfg, COMP Sw[], float Sn[], float w[])$/;"	f
+dft_speech	sine.c	/^void dft_speech(codec2_fftr_cfg fftr_fwd_cfg, COMP Sw[], float Sn[], float w[])$/;"	f
+dump_E	dump.c	/^void dump_E(float E) {$/;"	f
+dump_Ew	dump.c	/^void dump_Ew(COMP Ew[]) {$/;"	f
+dump_Fw	dump.c	/^void dump_Fw(COMP Fw[]) {$/;"	f
+dump_Pw	dump.c	/^void dump_Pw(float Pw[]) {$/;"	f
+dump_Pwb	dump.c	/^void dump_Pwb(float Pwb[]) {$/;"	f
+dump_Rw	dump.c	/^void dump_Rw(float Rw[]) {$/;"	f
+dump_Sn	dump.c	/^void dump_Sn(int m_pitch, float Sn[]) {$/;"	f
+dump_Sw	dump.c	/^void dump_Sw(COMP Sw[]) {$/;"	f
+dump_Sw_	dump.c	/^void dump_Sw_(COMP Sw_[]) {$/;"	f
+dump_ak	dump.c	/^void dump_ak(float ak[], int order) {$/;"	f
+dump_ak_	dump.c	/^void dump_ak_(float ak_[], int order) {$/;"	f
+dump_bg	dump.c	/^void dump_bg(float e, float bg_est, float percent_uv) {$/;"	f
+dump_dec	dump.c	/^void dump_dec(COMP Fw[]) {$/;"	f
+dump_e	dump.c	/^void dump_e(float e_hz[]) {$/;"	f
+dump_hephase	dump.c	/^void dump_hephase(int ind[], int dim) {$/;"	f
+dump_lpc_snr	dump.c	/^void dump_lpc_snr(float snr) {$/;"	f
+dump_lsp	dump.c	/^void dump_lsp(float lsp[]) {$/;"	f
+dump_lsp_	dump.c	/^void dump_lsp_(float lsp_[]) {$/;"	f
+dump_mel	dump.c	/^void dump_mel(float mel[], int order) {$/;"	f
+dump_mel_indexes	dump.c	/^void dump_mel_indexes(int mel_indexes[], int order) {$/;"	f
+dump_model	dump.c	/^void dump_model(MODEL *model) {$/;"	f
+dump_off	dump.c	/^void dump_off(){$/;"	f
+dump_on	dump.c	/^void dump_on(char p[]) {$/;"	f
+dump_phase	dump.c	/^void dump_phase(float phase[], int L) {$/;"	f
+dump_phase_	dump.c	/^void dump_phase_(float phase_[], int L) {$/;"	f
+dump_quantised_model	dump.c	/^void dump_quantised_model(MODEL *model) {$/;"	f
+dump_snr	dump.c	/^void dump_snr(float snr) {$/;"	f
+dump_softdec	dump.c	/^void dump_softdec(float *softdec, int n)$/;"	f
+dump_sq	dump.c	/^void dump_sq(int m_pitch, float sq[]) {$/;"	f
+dump_weights	dump.c	/^void dump_weights(float w[], int order) {$/;"	f
+dumpon	dump.c	/^static int dumpon = 0;$/;"	v	file:
+ear_protection	codec2.c	/^static void ear_protection(float in_out[], int n) {$/;"	f	file:
+eband5ms	lpcnet_freq.c	/^static float eband5ms[] = {$/;"	v	file:
+encode	codec2_internal.h	/^    void (*encode)(struct CODEC2 *c2, unsigned char * bits, short speech[]);$/;"	m	struct:CODEC2
+encode_Wo	quantise.c	/^int encode_Wo(C2CONST *c2const, float Wo, int bits)$/;"	f
+encode_WoE	quantise.c	/^int encode_WoE(MODEL *model, float e, float xq[])$/;"	f
+encode_energy	quantise.c	/^int encode_energy(float e, int bits)$/;"	f
+encode_log_Wo	quantise.c	/^int encode_log_Wo(C2CONST *c2const, float Wo, int bits)$/;"	f
+encode_lspds_scalar	quantise.c	/^void encode_lspds_scalar($/;"	f
+encode_lsps_scalar	quantise.c	/^void encode_lsps_scalar(int indexes[], float lsp[], int order)$/;"	f
+encode_lsps_vq	quantise.c	/^void encode_lsps_vq(int *indexes, float *x, float *xq, int order)$/;"	f
+energy_prev	codec2_internal.h	/^    float 	   energy_prev;$/;"	m	struct:CODEC2
+entries	mbest.h	/^    int                entries;   \/* number of entries in mbest list   *\/$/;"	m	struct:MBEST
+eq	codec2_internal.h	/^    float          eq[NEWAMP1_K];            \/* optional equaliser *\/$/;"	m	struct:CODEC2
+eq_en	codec2_internal.h	/^    int            eq_en;$/;"	m	struct:CODEC2
+errmsg	optparse.h	/^    char errmsg[64];$/;"	m	struct:optparse
+error	mbest.h	/^    float error;$/;"	m	struct:MBEST_LIST
+est_voicing_mbe	sine.c	/^float est_voicing_mbe($/;"	f
+estimate_amplitudes	sine.c	/^void estimate_amplitudes(MODEL *model, COMP Sw[], float W[], int est_phase)$/;"	f
+ex_phase	codec2_internal.h	/^    float         ex_phase;                \/* excitation model phase track              *\/$/;"	m	struct:CODEC2
+f	nlp.c	/^    FILE         *f;$/;"	m	struct:__anon7	file:
+fE	dump.c	/^static FILE *fE = NULL;$/;"	v	file:
+factors	_kiss_fft_guts.h	/^    int factors[2*MAXFACTORS];$/;"	m	struct:kiss_fft_state
+fak	dump.c	/^static FILE *fak = NULL;$/;"	v	file:
+fak_	dump.c	/^static FILE *fak_ = NULL;$/;"	v	file:
+fbg	dump.c	/^static FILE *fbg = NULL;$/;"	v	file:
+fcmult	comp_prim.h	/^inline static COMP fcmult(float a, COMP b)$/;"	f
+fdec	dump.c	/^static FILE *fdec = NULL;$/;"	v	file:
+fdmdv_16_to_8	nlp.c	/^static void fdmdv_16_to_8(float out8k[], float in16k[], int n)$/;"	f	file:
+fdmdv_os_filter	os.h	/^static const float fdmdv_os_filter[]= {$/;"	v
+fdmdv_os_filter48	os.h	/^static const float fdmdv_os_filter48[]= {$/;"	v
+fe	dump.c	/^static FILE *fe = NULL;$/;"	v	file:
+few	dump.c	/^static FILE *few = NULL;$/;"	v	file:
+fft_cfg	nlp.c	/^    codec2_fft_cfg  fft_cfg;         \/* kiss FFT config              *\/$/;"	m	struct:__anon7	file:
+fft_fwd_cfg	codec2_internal.h	/^    codec2_fft_cfg  fft_fwd_cfg;           \/* forward FFT config                        *\/$/;"	m	struct:CODEC2
+fftr_fwd_cfg	codec2_internal.h	/^    codec2_fftr_cfg fftr_fwd_cfg;          \/* forward real FFT config                   *\/$/;"	m	struct:CODEC2
+fftr_inv_cfg	codec2_internal.h	/^    codec2_fftr_cfg  fftr_inv_cfg;         \/* inverse FFT config                        *\/$/;"	m	struct:CODEC2
+ffw	dump.c	/^static FILE *ffw = NULL;$/;"	v	file:
+fhephase	dump.c	/^static FILE *fhephase = NULL;$/;"	v	file:
+filtP1100S1300	filter_coef.h	/^float filtP1100S1300[]={$/;"	v
+filtP400S600	filter_coef.h	/^float filtP400S600[100]={$/;"	v
+filtP550S750	filter_coef.h	/^float filtP550S750[160]={$/;"	v
+filtP650S900	filter_coef.h	/^float filtP650S900[100]={$/;"	v
+filtP900S1100	filter_coef.h	/^float filtP900S1100[]={$/;"	v
+find_aks	lpc.c	/^void find_aks($/;"	f
+find_nearest	quantise.c	/^int find_nearest(const float *codebook, int nb_entries, float *x, int ndim)$/;"	f
+find_nearest_weighted	quantise.c	/^int find_nearest_weighted(const float *codebook, int nb_entries, float *x, const float *w, int ndim)$/;"	f
+flags	c2file.h	/^    char flags;$/;"	m	struct:c2_header
+flpcsnr	dump.c	/^static FILE *flpcsnr = NULL;$/;"	v	file:
+flsp	dump.c	/^static FILE *flsp = NULL;$/;"	v	file:
+flsp_	dump.c	/^static FILE *flsp_ = NULL;$/;"	v	file:
+fmel	dump.c	/^static FILE *fmel = NULL;$/;"	v	file:
+fmel_indexes	dump.c	/^static FILE *fmel_indexes = NULL;$/;"	v	file:
+fmlfeat	codec2_internal.h	/^    FILE *fmlfeat, *fmlmodel;$/;"	m	struct:CODEC2
+fmlmodel	codec2_internal.h	/^    FILE *fmlfeat, *fmlmodel;$/;"	m	struct:CODEC2
+fmodel	dump.c	/^static FILE *fmodel = NULL;$/;"	v	file:
+force_min_lsp_dist	quantise.c	/^void force_min_lsp_dist(float lsp[], int order)$/;"	f
+fphase	dump.c	/^static FILE *fphase = NULL;$/;"	v	file:
+fphase_	dump.c	/^static FILE *fphase_ = NULL;$/;"	v	file:
+fpw	dump.c	/^static FILE *fpw = NULL;$/;"	v	file:
+fpwb	dump.c	/^static FILE *fpwb = NULL;$/;"	v	file:
+fqmodel	dump.c	/^static FILE *fqmodel = NULL;$/;"	v	file:
+frk	dump.c	/^static FILE *frk = NULL;$/;"	v	file:
+frw	dump.c	/^static FILE *frw = NULL;$/;"	v	file:
+fsn	dump.c	/^static FILE *fsn = NULL;$/;"	v	file:
+fsnr	dump.c	/^static FILE *fsnr = NULL;$/;"	v	file:
+fsoftdec	dump.c	/^static FILE *fsoftdec = NULL;$/;"	v	file:
+fsq	dump.c	/^static FILE *fsq = NULL;$/;"	v	file:
+fsw	dump.c	/^static FILE *fsw = NULL;$/;"	v	file:
+fsw_	dump.c	/^static FILE *fsw_ = NULL;$/;"	v	file:
+ftomel	newamp1.c	/^float ftomel(float fHz) {$/;"	f
+fweights	dump.c	/^static FILE *fweights = NULL;$/;"	v	file:
+gamma	codec2_internal.h	/^    float         gamma;$/;"	m	struct:CODEC2
+ge_cb	codebookge.c	/^const struct lsp_codebook ge_cb[] = {$/;"	v	typeref:struct:lsp_codebook
+ge_coeff	quantise.c	/^static float ge_coeff[2] = {0.8, 0.9};$/;"	v	file:
+gp_deinterleave_bits	gp_interleaver.c	/^void gp_deinterleave_bits(char frame[], char interleaved_frame[], int Nbits)$/;"	f
+gp_deinterleave_comp	gp_interleaver.c	/^void gp_deinterleave_comp(COMP frame[], COMP interleaved_frame[], int Nbits) {$/;"	f
+gp_deinterleave_float	gp_interleaver.c	/^void gp_deinterleave_float(float frame[], float interleaved_frame[], int Nbits) {$/;"	f
+gp_interleave_bits	gp_interleaver.c	/^void gp_interleave_bits(char interleaved_frame[], char frame[], int Nbits)$/;"	f
+gp_interleave_comp	gp_interleaver.c	/^void gp_interleave_comp(COMP interleaved_frame[], COMP frame[], int Nbits) {$/;"	f
+gp_interleave_float	gp_interleaver.c	/^void gp_interleave_float(float interleaved_frame[], float frame[], int Nbits) {$/;"	f
+gray	codec2_internal.h	/^    int           gray;                    \/* non-zero for gray encoding                *\/$/;"	m	struct:CODEC2
+gt_alpha5_root	rn.h	/^const float gt_alpha5_root[]={$/;"	v
+gt_alpha5_root_coh	rn_coh.h	/^const float gt_alpha5_root_coh[]={$/;"	v
+gt_alpha5_root_coh_neon	rn_coh.h	/^const float gt_alpha5_root_coh_neon[]={$/;"	v
+hanning	hanning.h	/^const float hanning[]={$/;"	v
+hanning_window	lpc.c	/^void hanning_window($/;"	f
+hpf	sine.c	/^float hpf(float x, float states[])$/;"	f
+hpf_states	codec2_internal.h	/^    float         hpf_states[2];           \/* high pass filter states                   *\/$/;"	m	struct:CODEC2
+hs_pitch_refinement	sine.c	/^void hs_pitch_refinement(MODEL *model, COMP Sw[], float pmin, float pmax, float pstep)$/;"	f
+ht_coeff	ht_coeff.h	/^COMP ht_coeff[]={$/;"	v
+i	kiss_fft.h	/^    kiss_fft_scalar i;$/;"	m	struct:__anon3
+imag	comp.h	/^  float imag;$/;"	m	struct:__anon4
+index	mbest.h	/^    int   index[MBEST_STAGES];    \/* index of each stage that lead us to this error *\/$/;"	m	struct:MBEST_LIST
+instance	codec2_fft.h	/^        const arm_cfft_instance_f32* instance;$/;"	m	struct:__anon2
+instance	codec2_fft.h	/^      arm_rfft_fast_instance_f32* instance;$/;"	m	struct:__anon1
+interp_Wo	interp.c	/^void interp_Wo($/;"	f
+interp_Wo2	interp.c	/^void interp_Wo2($/;"	f
+interp_Wo_v	newamp1.c	/^void interp_Wo_v(float Wo_[], int L_[], int voicing_[], float Wo1, float Wo2, int voicing1, int voicing2)$/;"	f
+interp_energy	interp.c	/^float interp_energy(float prev_e, float next_e)$/;"	f
+interp_energy2	interp.c	/^float interp_energy2(float prev_e, float next_e, float weight)$/;"	f
+interp_para	newamp1.c	/^void interp_para(float y[], float xp[], float yp[], int np, float x[], int n)$/;"	f
+interpolate_lsp	interp.c	/^void interpolate_lsp($/;"	f
+interpolate_lsp_ver2	interp.c	/^void interpolate_lsp_ver2(float interp[], float prev[],  float next[], float weight, int order)$/;"	f
+inverse	_kiss_fft_guts.h	/^    int inverse;$/;"	m	struct:kiss_fft_state
+inverse	codec2_fft.h	/^        int inverse;$/;"	m	struct:__anon2
+inverse	codec2_fft.h	/^      int inverse;$/;"	m	struct:__anon1
+inverse_filter	lpc.c	/^void inverse_filter($/;"	f
+k	defines.h	/^    int			k;        \/* dimension of vector	*\/$/;"	m	struct:lsp_codebook
+kf_bfly2	kiss_fft.c	/^static void kf_bfly2($/;"	f	file:
+kf_bfly3	kiss_fft.c	/^static void kf_bfly3($/;"	f	file:
+kf_bfly4	kiss_fft.c	/^static void kf_bfly4($/;"	f	file:
+kf_bfly5	kiss_fft.c	/^static void kf_bfly5($/;"	f	file:
+kf_bfly_generic	kiss_fft.c	/^static void kf_bfly_generic($/;"	f	file:
+kf_cexp	_kiss_fft_guts.h	141;"	d
+kf_factor	kiss_fft.c	/^void kf_factor(int n,int * facbuf)$/;"	f	file:
+kf_work	kiss_fft.c	/^void kf_work($/;"	f	file:
+kiss_fft	kiss_fft.c	/^void kiss_fft(kiss_fft_cfg cfg,const kiss_fft_cpx *fin,kiss_fft_cpx *fout)$/;"	f
+kiss_fft_alloc	kiss_fft.c	/^kiss_fft_cfg kiss_fft_alloc(int nfft,int inverse_fft,void * mem,size_t * lenmem )$/;"	f
+kiss_fft_cfg	kiss_fft.h	/^typedef struct kiss_fft_state* kiss_fft_cfg;$/;"	t	typeref:struct:kiss_fft_state
+kiss_fft_cleanup	kiss_fft.c	/^void kiss_fft_cleanup(void)$/;"	f
+kiss_fft_cpx	kiss_fft.h	/^}kiss_fft_cpx;$/;"	t	typeref:struct:__anon3
+kiss_fft_free	kiss_fft.h	102;"	d
+kiss_fft_next_fast_size	kiss_fft.c	/^int kiss_fft_next_fast_size(int n)$/;"	f
+kiss_fft_scalar	kiss_fft.h	28;"	d
+kiss_fft_scalar	kiss_fft.h	40;"	d
+kiss_fft_scalar	kiss_fft.h	42;"	d
+kiss_fft_scalar	kiss_fft.h	47;"	d
+kiss_fft_state	_kiss_fft_guts.h	/^struct kiss_fft_state{$/;"	s
+kiss_fft_stride	kiss_fft.c	/^void kiss_fft_stride(kiss_fft_cfg st,const kiss_fft_cpx *fin,kiss_fft_cpx *fout,int in_stride)$/;"	f
+kiss_fftr	kiss_fftr.c	/^void kiss_fftr(kiss_fftr_cfg st,const kiss_fft_scalar *timedata,kiss_fft_cpx *freqdata)$/;"	f
+kiss_fftr_alloc	kiss_fftr.c	/^kiss_fftr_cfg kiss_fftr_alloc(int nfft,int inverse_fft,void * mem,size_t * lenmem)$/;"	f
+kiss_fftr_cfg	kiss_fftr.h	/^typedef struct kiss_fftr_state *kiss_fftr_cfg;$/;"	t	typeref:struct:kiss_fftr_state
+kiss_fftr_free	kiss_fftr.h	41;"	d
+kiss_fftr_next_fast_size_real	kiss_fft.h	117;"	d
+kiss_fftr_state	kiss_fftr.c	/^struct kiss_fftr_state{$/;"	s	file:
+kiss_fftri	kiss_fftr.c	/^void kiss_fftri(kiss_fftr_cfg st,const kiss_fft_cpx *freqdata,kiss_fft_scalar *timedata)$/;"	f
+levinson_durbin	lpc.c	/^void levinson_durbin($/;"	f
+list	mbest.h	/^    struct MBEST_LIST *list;$/;"	m	struct:MBEST	typeref:struct:MBEST::MBEST_LIST
+log2m	defines.h	/^    int			log2m;    \/* number of bits in m	*\/$/;"	m	struct:lsp_codebook
+longname	optparse.h	/^    const char *longname;$/;"	m	struct:optparse_long
+lpc_pf	codec2_internal.h	/^    int           lpc_pf;                  \/* LPC post filter on                        *\/$/;"	m	struct:CODEC2
+lpc_post_filter	quantise.c	/^void lpc_post_filter(codec2_fftr_cfg fftr_fwd_cfg, float Pw[], float ak[],$/;"	f
+lpc_to_lsp	lsp.c	/^int lpc_to_lsp (float *a, int order, float *freq, int nb, float delta)$/;"	f
+lpcnet_compute_band_energy	lpcnet_freq.c	/^int lpcnet_compute_band_energy(float *bandE, float *bandCentrekHz, COMP *X, float Fs, int Nfft) {$/;"	f
+lsp_bits	quantise.c	/^int lsp_bits(int i) {$/;"	f
+lsp_cb	codebook.c	/^const struct lsp_codebook lsp_cb[] = {$/;"	v	typeref:struct:lsp_codebook
+lsp_cbd	codebookd.c	/^const struct lsp_codebook lsp_cbd[] = {$/;"	v	typeref:struct:lsp_codebook
+lsp_cbjmv	codebookjmv.c	/^const struct lsp_codebook lsp_cbjmv[] = {$/;"	v	typeref:struct:lsp_codebook
+lsp_cbjvm	codebookjvm.c	/^const struct lsp_codebook lsp_cbjvm[] = {$/;"	v	typeref:struct:lsp_codebook
+lsp_codebook	defines.h	/^struct lsp_codebook {$/;"	s
+lsp_pred_vq_bits	quantise.c	/^int lsp_pred_vq_bits(int i) {$/;"	f
+lsp_to_lpc	lsp.c	/^void lsp_to_lpc(float *lsp, float *ak, int order)$/;"	f
+lspd_bits	quantise.c	/^int lspd_bits(int i) {$/;"	f
+lspjmv_quantise	quantise.c	/^void lspjmv_quantise(float *x, float *xq, int order)$/;"	f
+lspmelvq_cb	codebooklspmelvq.c	/^const struct lsp_codebook lspmelvq_cb[] = {$/;"	v	typeref:struct:lsp_codebook
+m	defines.h	/^    int			m;        \/* elements in codebook	*\/$/;"	m	struct:lsp_codebook
+m	nlp.c	/^    int           m;$/;"	m	struct:__anon7	file:
+m_pitch	codec2_internal.h	/^    int           m_pitch;$/;"	m	struct:CODEC2
+m_pitch	defines.h	/^    int   m_pitch;       \/* pitch estimation window size in samples  *\/$/;"	m	struct:__anon5
+mag_to_phase	phase.c	/^void mag_to_phase(float phase[],             \/* Nfft\/2+1 output phase samples in radians       *\/$/;"	f
+magic	c2file.h	/^    char magic[3];$/;"	m	struct:c2_header
+make_analysis_window	sine.c	/^void make_analysis_window(C2CONST *c2const, codec2_fft_cfg fft_fwd_cfg, float w[], float W[])$/;"	f
+make_synthesis_window	sine.c	/^void make_synthesis_window(C2CONST *c2const, float Pn[])$/;"	f
+max_amp	defines.h	/^    int   max_amp;       \/* maximum number of harmonics              *\/$/;"	m	struct:__anon5
+mbest_create	mbest.c	/^struct MBEST *mbest_create(int entries) {$/;"	f
+mbest_destroy	mbest.c	/^void mbest_destroy(struct MBEST *mbest) {$/;"	f
+mbest_insert	mbest.c	/^void mbest_insert(struct MBEST *mbest, int index[], float error) {$/;"	f
+mbest_precompute_weight	mbest.c	/^void mbest_precompute_weight(float cb[], float w[], int k, int m) {$/;"	f
+mbest_print	mbest.c	/^void mbest_print(char title[], struct MBEST *mbest) {$/;"	f
+mbest_search	mbest.c	/^void mbest_search($/;"	f
+mbest_search450	mbest.c	/^void mbest_search450(const float  *cb, float vec[], float w[], int k,int shorterK, int m, struct MBEST *mbest, int index[])$/;"	f
+mel_cb	codebookmel.c	/^const struct lsp_codebook mel_cb[] = {$/;"	v	typeref:struct:lsp_codebook
+mel_sample_freqs_kHz	newamp1.c	/^void mel_sample_freqs_kHz(float rate_K_sample_freqs_kHz[], int K, float mel_start, float mel_end)$/;"	f
+mem_fir	nlp.c	/^    float         mem_fir[NLP_NTAP]; \/* decimation FIR filter memory *\/$/;"	m	struct:__anon7	file:
+mem_x	nlp.c	/^    float         mem_x,mem_y;       \/* memory for notch filter      *\/$/;"	m	struct:__anon7	file:
+mem_y	nlp.c	/^    float         mem_x,mem_y;       \/* memory for notch filter      *\/$/;"	m	struct:__anon7	file:
+mode	c2file.h	/^    char mode;$/;"	m	struct:c2_header
+mode	codec2_internal.h	/^    int           mode;$/;"	m	struct:CODEC2
+n2_mel_sample_freqs_kHz	newamp2.c	/^void n2_mel_sample_freqs_kHz(float rate_K_sample_freqs_kHz[], int K)$/;"	f
+n2_post_filter_newamp2	newamp2.c	/^void n2_post_filter_newamp2(float vec[], float sample_freq_kHz[], int K, float pf_gain)$/;"	f
+n2_prev_rate_K_vec_	codec2_internal.h	/^    float          n2_prev_rate_K_vec_[NEWAMP2_K];$/;"	m	struct:CODEC2
+n2_pwb_prev_rate_K_vec_	codec2_internal.h	/^    float          n2_pwb_prev_rate_K_vec_[NEWAMP2_16K_K];$/;"	m	struct:CODEC2
+n2_pwb_rate_K_sample_freqs_kHz	codec2_internal.h	/^    float          n2_pwb_rate_K_sample_freqs_kHz[NEWAMP2_16K_K];$/;"	m	struct:CODEC2
+n2_rate_K_mbest_encode	newamp2.c	/^void n2_rate_K_mbest_encode(int *indexes, float *x, float *xq, int ndim)$/;"	f
+n2_rate_K_sample_freqs_kHz	codec2_internal.h	/^    float          n2_rate_K_sample_freqs_kHz[NEWAMP2_K];$/;"	m	struct:CODEC2
+n2_resample_const_rate_f	newamp2.c	/^void n2_resample_const_rate_f(C2CONST *c2const, MODEL *model, float rate_K_vec[], float rate_K_sample_freqs_kHz[], int K)$/;"	f
+n2_resample_rate_L	newamp2.c	/^void n2_resample_rate_L(C2CONST *c2const, MODEL *model, float rate_K_vec[], float rate_K_sample_freqs_kHz[], int K,int plosive_flag)$/;"	f
+nBuf	filter.h	/^    int nBuf;                  \/\/ dimension of cBuf$/;"	m	struct:quisk_cfFilter
+nTaps	filter.h	/^    int nTaps;                 \/\/ dimension of dSamples, cSamples, dCoefs$/;"	m	struct:quisk_cfFilter
+n_samp	codec2_internal.h	/^    int           n_samp;$/;"	m	struct:CODEC2
+n_samp	defines.h	/^    int   n_samp;        \/* number of samples per 10ms frame at Fs   *\/$/;"	m	struct:__anon5
+newamp1_energy_cb	codebooknewamp1_energy.c	/^const struct lsp_codebook newamp1_energy_cb[] = {$/;"	v	typeref:struct:lsp_codebook
+newamp1_eq	newamp1.c	/^void newamp1_eq(float rate_K_vec_no_mean[], float eq[], int K, int eq_en) {$/;"	f
+newamp1_indexes_to_model	newamp1.c	/^void newamp1_indexes_to_model(C2CONST *c2const,$/;"	f
+newamp1_indexes_to_rate_K_vec	newamp1.c	/^void newamp1_indexes_to_rate_K_vec(float  rate_K_vec_[],  $/;"	f
+newamp1_interpolate	newamp1.c	/^void newamp1_interpolate(float interpolated_surface_[], float left_vec[], float right_vec[], int K)$/;"	f
+newamp1_model_to_indexes	newamp1.c	/^void newamp1_model_to_indexes(C2CONST *c2const,$/;"	f
+newamp1vq_cb	codebooknewamp1.c	/^const struct lsp_codebook newamp1vq_cb[] = {$/;"	v	typeref:struct:lsp_codebook
+newamp2_16k_indexes_to_rate_K_vec	newamp2.c	/^void newamp2_16k_indexes_to_rate_K_vec(float  rate_K_vec_[],  $/;"	f
+newamp2_energy_cb	codebooknewamp2_energy.c	/^const struct lsp_codebook newamp2_energy_cb[] = {$/;"	v	typeref:struct:lsp_codebook
+newamp2_indexes_to_model	newamp2.c	/^void newamp2_indexes_to_model(C2CONST *c2const,$/;"	f
+newamp2_indexes_to_rate_K_vec	newamp2.c	/^void newamp2_indexes_to_rate_K_vec(float  rate_K_vec_[],  $/;"	f
+newamp2_interpolate	newamp2.c	/^void newamp2_interpolate(float interpolated_surface_[], float left_vec[], float right_vec[], int K, int plosive_flag)$/;"	f
+newamp2_model_to_indexes	newamp2.c	/^void newamp2_model_to_indexes(C2CONST *c2const,$/;"	f
+newamp2vq_cb	codebooknewamp2.c	/^const struct lsp_codebook newamp2vq_cb[] = {$/;"	v	typeref:struct:lsp_codebook
+next	sine.c	/^static unsigned long next = 1;$/;"	v	file:
+nfft	_kiss_fft_guts.h	/^    int nfft;$/;"	m	struct:kiss_fft_state
+nlp	codec2_internal.h	/^    void         *nlp;                     \/* pitch predictor states                    *\/$/;"	m	struct:CODEC2
+nlp	nlp.c	/^float nlp($/;"	f
+nlp_create	nlp.c	/^void *nlp_create(C2CONST *c2const)$/;"	f
+nlp_destroy	nlp.c	/^void nlp_destroy(void *nlp_state)$/;"	f
+nlp_fir	nlp.c	/^const float nlp_fir[] = {$/;"	v
+nse	codec2_internal.h	/^    unsigned int   nse;                      \/* number of terms in sum       *\/$/;"	m	struct:CODEC2
+nw	defines.h	/^    int   nw;            \/* analysis window size in samples          *\/      $/;"	m	struct:__anon5
+optarg	optparse.h	/^    char *optarg;$/;"	m	struct:optparse
+optind	optparse.h	/^    int optind;$/;"	m	struct:optparse
+optopt	optparse.h	/^    int optopt;$/;"	m	struct:optparse
+optparse	optparse.h	/^optparse(struct optparse *options, const char *optstring)$/;"	f
+optparse	optparse.h	/^struct optparse {$/;"	s
+optparse_arg	optparse.h	/^optparse_arg(struct optparse *options)$/;"	f
+optparse_argtype	optparse.h	/^enum optparse_argtype {$/;"	g
+optparse_argtype	optparse.h	/^optparse_argtype(const char *optstring, char c)$/;"	f
+optparse_error	optparse.h	/^optparse_error(struct optparse *options, const char *msg, const char *data)$/;"	f
+optparse_from_long	optparse.h	/^optparse_from_long(const struct optparse_long *longopts, char *optstring)$/;"	f
+optparse_init	optparse.h	/^optparse_init(struct optparse *options, char **argv)$/;"	f
+optparse_is_dashdash	optparse.h	/^optparse_is_dashdash(const char *arg)$/;"	f
+optparse_is_longopt	optparse.h	/^optparse_is_longopt(const char *arg)$/;"	f
+optparse_is_shortopt	optparse.h	/^optparse_is_shortopt(const char *arg)$/;"	f
+optparse_long	optparse.h	/^optparse_long(struct optparse *options,$/;"	f
+optparse_long	optparse.h	/^struct optparse_long {$/;"	s
+optparse_long_fallback	optparse.h	/^optparse_long_fallback(struct optparse *options,$/;"	f
+optparse_longopts_arg	optparse.h	/^optparse_longopts_arg(char *option)$/;"	f
+optparse_longopts_end	optparse.h	/^optparse_longopts_end(const struct optparse_long *longopts, int i)$/;"	f
+optparse_longopts_match	optparse.h	/^optparse_longopts_match(const char *longname, const char *option)$/;"	f
+optparse_permute	optparse.h	/^optparse_permute(struct optparse *options, int index)$/;"	f
+p_max	defines.h	/^    int   p_max;         \/* maximum pitch period in samples          *\/$/;"	m	struct:__anon5
+p_min	defines.h	/^    int   p_min;         \/* minimum pitch period in samples          *\/$/;"	m	struct:__anon5
+pack	pack.c	/^pack($/;"	f
+pack_natural_or_gray	pack.c	/^pack_natural_or_gray($/;"	f
+pad	kiss_fftr.c	/^    void * pad;$/;"	m	struct:kiss_fftr_state	file:
+pcpx	_kiss_fft_guts.h	149;"	d
+permute	optparse.h	/^    int permute;$/;"	m	struct:optparse
+phase_fft_fwd_cfg	codec2_internal.h	/^    codec2_fft_cfg phase_fft_fwd_cfg;$/;"	m	struct:CODEC2
+phase_fft_inv_cfg	codec2_internal.h	/^    codec2_fft_cfg phase_fft_inv_cfg;      $/;"	m	struct:CODEC2
+phase_synth_zero_order	phase.c	/^void phase_synth_zero_order($/;"	f
+phi	defines.h	/^    float phi[MAX_AMP+1]; \/* phase of each harmonic                     *\/$/;"	m	struct:__anon6
+phi0	phi0.c	/^float phi0( float xf ) {$/;"	f
+pilot_coeff	pilot_coeff.h	/^\/* const *\/ float pilot_coeff[]={$/;"	v
+pilots_coh	pilots_coh.h	/^float pilots_coh[][PILOTS_NC]={$/;"	v
+post_filter_en	codec2_internal.h	/^    int            post_filter_en;$/;"	m	struct:CODEC2
+post_filter_newamp1	newamp1.c	/^void post_filter_newamp1(float vec[], float sample_freq_kHz[], int K, float pf_gain)$/;"	f
+post_process_sub_multiples	nlp.c	/^float post_process_sub_multiples(COMP Fw[],$/;"	f
+postfilter	postfilter.c	/^void postfilter($/;"	f
+pre_emp	lpc.c	/^void pre_emp($/;"	f
+prefix	dump.c	/^static char  prefix[MAX_STR];$/;"	v	file:
+prev_e_dec	codec2_internal.h	/^    float         prev_e_dec;              \/* previous frame's LPC energy               *\/$/;"	m	struct:CODEC2
+prev_f0_enc	codec2_internal.h	/^    float         prev_f0_enc;             \/* previous frame's f0    estimate           *\/$/;"	m	struct:CODEC2
+prev_lsps_dec	codec2_internal.h	/^    float         prev_lsps_dec[LPC_ORD];  \/* previous frame's LSPs                     *\/$/;"	m	struct:CODEC2
+prev_model_dec	codec2_internal.h	/^    MODEL         prev_model_dec;          \/* previous frame's model parameters         *\/$/;"	m	struct:CODEC2
+prev_rate_K_vec_	codec2_internal.h	/^    float          prev_rate_K_vec_[NEWAMP1_K];$/;"	m	struct:CODEC2
+ptcSamp	filter.h	/^    complex float * ptcSamp;   \/\/ next available position in cSamples$/;"	m	struct:quisk_cfFilter
+quantise	quantise.c	/^long quantise(const float * cb, float vec[], float w[], int k, int m, float *se)$/;"	f
+quantise_WoE	quantise.c	/^void quantise_WoE(C2CONST *c2const, MODEL *model, float *e, float xq[])$/;"	f
+quiskFilt120t480	filter_coef.h	/^float quiskFilt120t480[480] = {$/;"	v
+quisk_ccfFilter	filter.c	/^void quisk_ccfFilter(complex float * inSamples, complex float * outSamples, int count, struct quisk_cfFilter * filter) {$/;"	f
+quisk_cfFilter	filter.h	/^struct quisk_cfFilter {        \/\/ Structure to hold the static data for FIR filters$/;"	s
+quisk_cfInterpDecim	filter.c	/^int quisk_cfInterpDecim(complex float * cSamples, int count, struct quisk_cfFilter * filter, int interp, int decim) {$/;"	f
+quisk_cfTune	filter.c	/^void quisk_cfTune(struct quisk_cfFilter * filter, float freq) {$/;"	f
+quisk_filt_cfInit	filter.c	/^void quisk_filt_cfInit(struct quisk_cfFilter * filter, float * coefs, int taps) {$/;"	f
+quisk_filt_destroy	filter.c	/^void quisk_filt_destroy(struct quisk_cfFilter * filter) {$/;"	f
+r	kiss_fft.h	/^    kiss_fft_scalar r;$/;"	m	struct:__anon3
+rate_K_mbest_encode	newamp1.c	/^float rate_K_mbest_encode(int *indexes, float *x, float *xq, int ndim, int mbest_entries)$/;"	f
+rate_K_sample_freqs_kHz	codec2_internal.h	/^    float          rate_K_sample_freqs_kHz[NEWAMP1_K];$/;"	m	struct:CODEC2
+real	comp.h	/^  float real;$/;"	m	struct:__anon4
+resample_const_rate_f	newamp1.c	/^void resample_const_rate_f(C2CONST *c2const, MODEL *model, float rate_K_vec[], float rate_K_sample_freqs_kHz[], int K)$/;"	f
+resample_rate_L	newamp1.c	/^void resample_rate_L(C2CONST *c2const, MODEL *model, float rate_K_vec[], float rate_K_sample_freqs_kHz[], int K)$/;"	f
+rxdec_coeff	rxdec_coeff.h	/^const float rxdec_coeff[]={$/;"	v
+sample_log_amp	interp.c	/^float sample_log_amp(MODEL *model, float w)$/;"	f
+sample_phase	phase.c	/^void sample_phase(MODEL *model, $/;"	f
+se	codec2_internal.h	/^    float          se;                       \/* running sum of squared error *\/$/;"	m	struct:CODEC2
+shortname	optparse.h	/^    int shortname;$/;"	m	struct:optparse_long
+smoothing	codec2_internal.h	/^    int           smoothing;               \/* enable smoothing for channels with errors *\/$/;"	m	struct:CODEC2
+smul	_kiss_fft_guts.h	64;"	d
+softdec	codec2_internal.h	/^    float        *softdec;                 \/* optional soft decn bits from demod        *\/$/;"	m	struct:CODEC2
+speech_to_uq_lsps	quantise.c	/^float speech_to_uq_lsps(float lsp[],$/;"	f
+sq	nlp.c	/^    float         sq[PMAX_M];	     \/* squared speech samples       *\/$/;"	m	struct:__anon7	file:
+sround	_kiss_fft_guts.h	65;"	d
+ssbfilt_coeff	ssbfilt_coeff.h	/^float ssbfilt_coeff[]={$/;"	v
+subopt	optparse.h	/^    int subopt;$/;"	m	struct:optparse
+substate	kiss_fftr.c	/^    kiss_fft_cfg substate;$/;"	m	struct:kiss_fftr_state	file:
+super_twiddles	kiss_fftr.c	/^    kiss_fft_cpx * super_twiddles;$/;"	m	struct:kiss_fftr_state	file:
+synthesis_filter	lpc.c	/^void synthesis_filter($/;"	f
+synthesise	sine.c	/^void synthesise($/;"	f
+synthesise_one_frame	codec2.c	/^void synthesise_one_frame(struct CODEC2 *c2, short speech[], MODEL *model, COMP Aw[], float gain)$/;"	f
+tmpbuf	kiss_fftr.c	/^    kiss_fft_cpx * tmpbuf;$/;"	m	struct:kiss_fftr_state	file:
+tw	defines.h	/^    int   tw;            \/* trapezoidal synthesis window overlap     *\/$/;"	m	struct:__anon5
+twiddles	_kiss_fft_guts.h	/^    kiss_fft_cpx twiddles[1];$/;"	m	struct:kiss_fft_state
+two_stage_pitch_refinement	sine.c	/^void two_stage_pitch_refinement(C2CONST *c2const, MODEL *model, COMP Sw[])$/;"	f
+unpack	pack.c	/^unpack($/;"	f
+unpack_natural_or_gray	pack.c	/^unpack_natural_or_gray($/;"	f
+user_rate_K_vec_no_mean_	codec2_internal.h	/^    float         *user_rate_K_vec_no_mean_; \/* optional, user supplied vector for quantisation experiments *\/$/;"	m	struct:CODEC2
+version_major	c2file.h	/^    char version_major;$/;"	m	struct:c2_header
+version_minor	c2file.h	/^    char version_minor;$/;"	m	struct:c2_header
+voiced	defines.h	/^    int   voiced;	  \/* non-zero if this frame is voiced           *\/$/;"	m	struct:__anon6
+voicing_left	codec2_internal.h	/^    int            voicing_left;$/;"	m	struct:CODEC2
+w	codec2_internal.h	/^    float        *w;	                   \/* [m_pitch] time domain hamming window      *\/$/;"	m	struct:CODEC2
+w	nlp.c	/^    float         w[PMAX_M\/DEC];     \/* DFT window                   *\/$/;"	m	struct:__anon7	file:
+weight	lpc.c	/^void weight($/;"	f
+xq_dec	codec2_internal.h	/^    float         xq_dec[2];$/;"	m	struct:CODEC2
+xq_enc	codec2_internal.h	/^    float         xq_enc[2];               \/* joint pitch and energy VQ states          *\/$/;"	m	struct:CODEC2
