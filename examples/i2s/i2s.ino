@@ -32,7 +32,7 @@ void setup() {
   while (!Serial);
   LOG_INFO("Board setup started");
 
-  // create 2s speaker
+  // create i2s speaker
   i2s_config_t i2s_speaker_config = {
     .mode = (i2s_mode_t)(I2S_MODE_MASTER | I2S_MODE_TX),
     .sample_rate = AUDIO_SAMPLE_RATE,
