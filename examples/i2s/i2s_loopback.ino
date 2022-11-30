@@ -101,7 +101,7 @@ void audio_task(void *param) {
   } else {
     //codec2_set_lpc_post_filter(c2_, 1, 0, 0.8, 0.2);
     c2_samples_per_frame_ = codec2_samples_per_frame(c2_);
-    c2_bytes_per_frame_ = (codec2_bits_per_frame(c2_) + 7) / 8;
+    c2_bytes_per_frame_ = codec2_bytes_per_frame(c2_);
     c2_samples_ = (int16_t*)malloc(sizeof(int16_t) * c2_samples_per_frame_);
     c2_bits_ = (uint8_t*)malloc(sizeof(uint8_t) * c2_bytes_per_frame_);
     LOG_INFO("Codec2 constructed", c2_samples_per_frame_, c2_bytes_per_frame_);
