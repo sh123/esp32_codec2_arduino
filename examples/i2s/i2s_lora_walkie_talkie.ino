@@ -86,7 +86,7 @@ uint8_t *c2_bits_;              // buffer for encoded frame
 
 // light sleep
 #define LIGHT_SLEEP_DELAY_MS    5000  // how long to wait before engering light sleep
-#define LIGHT_SLEEP_BITMASK     (uint64_t)(1 << LORA_RADIO_PIN_A) | (1 << LORA_RADIO_PIN_B) // bit mask for ext1 high pin wake up
+#define LIGHT_SLEEP_BITMASK     (uint64_t)(1 << LORA_RADIO_PIN_B) // bit mask for ext1 high pin wake up
 
 Timer<1> light_sleep_timer_;             // light sleep timer
 Timer<1>::Task light_sleep_timer_task_;  // light sleep timer task
