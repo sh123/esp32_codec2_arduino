@@ -12,37 +12,38 @@
 #define SERIAL_BAUD_RATE        115200  // USB serial baud rate
 
 // ptt button
-#define PTTBTN_PIN              39
-volatile bool btn_pressed_ = false;
+#define PTTBTN_PIN              39          // PTT button pin number
+#define PTTBTN_GPIO_PIN         GPIO_NUM_39 // PTT button light wake up GPIO pin
+volatile bool btn_pressed_ = false;         // true when button is held
 
 // lora module
 
-// lora module pinouts
-#define LORA_RADIO_PIN_SS       SS
-#define LORA_RADIO_PIN_RST      27
-#define LORA_RADIO_PIN_A        12
-#define LORA_RADIO_PIN_B        14
-#define LORA_RADIO_PIN_RXEN     32
-#define LORA_RADIO_PIN_TXEN     33
+// lora module pinouts (SX1268)
+#define LORA_RADIO_PIN_SS       SS  // NSS pin
+#define LORA_RADIO_PIN_RST      27  // NRST pin
+#define LORA_RADIO_PIN_A        12  // BUSY pin
+#define LORA_RADIO_PIN_B        14  // DIO1 pin
+#define LORA_RADIO_PIN_RXEN     32  // RX enable pin
+#define LORA_RADIO_PIN_TXEN     33  // TX enable pin
 
 // lora modulation parameters
-#define LORA_RADIO_FREQ         433.775
-#define LORA_RADIO_BW           125.0
-#define LORA_RADIO_SF           9
-#define LORA_RADIO_CR           7
-#define LORA_RADIO_PWR          2
-#define LORA_RADIO_CRC          1
-#define LORA_RADIO_EXPL         true
-#define LORA_RADIO_SYNC         0x34
+#define LORA_RADIO_FREQ         433.775 // frequency (MHz)
+#define LORA_RADIO_BW           125.0   // bandwidth (kHz)
+#define LORA_RADIO_SF           9       // spreading factor
+#define LORA_RADIO_CR           7       // coding rate
+#define LORA_RADIO_PWR          2       // power in dbm (real is +10db if module has amplifier)
+#define LORA_RADIO_CRC          1       // CRC bytes count
+#define LORA_RADIO_EXPL         true    // comment out to use implicit mode (for spreading factor 6)
+#define LORA_RADIO_SYNC         0x34    // sync word
 
 // lora support config
-#define LORA_RADIO_BUF_LEN      256   // packet buffer size
-#define LORA_RADIO_QUEUE_LEN    512   // queue length
+#define LORA_RADIO_BUF_LEN      256   // packets buffer size
+#define LORA_RADIO_QUEUE_LEN    512   // queues length
 
 #define LORA_RADIO_TASK_RX_BIT  0x01  // lora task rx bit command
 #define LORA_RADIO_TASK_TX_BIT  0x02  // lora task tx bit command
 
-// lora task packet queues
+// lora task packet and packet index/size queues
 CircularBuffer<uint8_t, LORA_RADIO_QUEUE_LEN> lora_radio_rx_queue_;
 CircularBuffer<uint8_t, LORA_RADIO_QUEUE_LEN> lora_radio_rx_queue_index_;
 CircularBuffer<uint8_t, LORA_RADIO_QUEUE_LEN> lora_radio_tx_queue_;
@@ -52,29 +53,29 @@ CircularBuffer<uint8_t, LORA_RADIO_QUEUE_LEN> lora_radio_tx_queue_index_;
 byte lora_radio_rx_buf_[LORA_RADIO_BUF_LEN];  // tx packet buffer
 byte lora_radio_tx_buf_[LORA_RADIO_BUF_LEN];  // rx packet buffer
 
-TaskHandle_t lora_task_;    // lora rx/tx task
+TaskHandle_t lora_task_;                // lora rx/tx task
 volatile bool lora_enable_isr_ = true;  // true to enable rx isr, disabled on tx
 SX1268 lora_radio_ = new Module(LORA_RADIO_PIN_SS, LORA_RADIO_PIN_A, LORA_RADIO_PIN_RST, LORA_RADIO_PIN_B);
 
-// audio speaker pinouts
-#define AUDIO_SPEAKER_BCLK      26
-#define AUDIO_SPEAKER_LRC       13
-#define AUDIO_SPEAKER_DIN       25
+// audio speaker pinouts (MAX98357A)
+#define AUDIO_SPEAKER_BCLK      26      // i2s clock (SLK)
+#define AUDIO_SPEAKER_LRC       13      // i2s word select (WS)
+#define AUDIO_SPEAKER_DIN       25      // i2s data (SD)
 
-// audio mic pinouts
-#define AUDIO_MIC_SD            2
-#define AUDIO_MIC_WS            15
-#define AUDIO_MIC_SCK           4
+// audio mic pinouts (INMP441)
+#define AUDIO_MIC_SD            2       // i2s data
+#define AUDIO_MIC_WS            15      // i2s word select
+#define AUDIO_MIC_SCK           4       // i2s clock
 
 // audio support
-#define AUDIO_CODEC2_MODE	      CODEC2_MODE_450 // codec2 mode
+#define AUDIO_CODEC2_MODE       CODEC2_MODE_450 // codec2 mode
 #define AUDIO_SAMPLE_RATE       8000    // audio sample rate
 #define AUDIO_MAX_PACKET_SIZE   48      // maximum packet size, multiple audio frames are inside
 #define AUDIO_TASK_PLAY_BIT     0x01    // task bit flag to start playback
 #define AUDIO_TASK_RECORD_BIT   0x02    // task bit flag to start recording
 
 // audio task
-TaskHandle_t audio_task_;       /// audio playback/record task
+TaskHandle_t audio_task_;       // audio playback/record task
 
 // codec2 
 struct CODEC2* c2_;             // codec2 instance
@@ -83,12 +84,12 @@ int c2_bytes_per_frame_;        // how many bytes in encoded frame
 int16_t *c2_samples_;           // buffer for raw samples
 uint8_t *c2_bits_;              // buffer for encoded frame
 
-// deep sleep
+// light sleep
 #define LIGHT_SLEEP_DELAY_MS    5000  // how long to wait before engering light sleep
 #define LIGHT_SLEEP_BITMASK     (uint64_t)(1 << LORA_RADIO_PIN_A) | (1 << LORA_RADIO_PIN_B) // bit mask for ext1 high pin wake up
 
-Timer<1> light_sleep_timer_;        // light sleep timer
-uintptr_t light_sleep_timer_task_;  // light sleep timer task
+Timer<1> light_sleep_timer_;             // light sleep timer
+Timer<1>::Task light_sleep_timer_task_;  // light sleep timer task
 
 void setup() {
   // setup logging
@@ -108,7 +109,13 @@ void setup() {
     lora_radio_.setCRC(LORA_RADIO_CRC);
     lora_radio_.setRfSwitchPins(LORA_RADIO_PIN_RXEN, LORA_RADIO_PIN_TXEN);
     lora_radio_.clearDio1Action();
+#ifdef LORA_RADIO_EXPL 
+    LOG_INFO("Using explicit header");
     lora_radio_.explicitHeader();
+#else
+    LOG_INFO("Using implicit header");
+    lora_radio_.implicitHeader();
+#endif
     lora_radio_.setDio1Action(onLoraDataAvailableIsr);
   } else {
     LOG_ERROR("Lora radio start failed:", lora_radio_state);
@@ -210,6 +217,7 @@ void light_sleep_reset() {
 bool light_sleep(void *param) {
 #ifdef ENABLE_LIGHT_SLEEP
   LOG_INFO("Entering light sleep");
+  // wake up on ptt button or lora radio incoming data
   esp_sleep_enable_ext0_wakeup(GPIO_NUM_39, 0);
   esp_sleep_enable_ext1_wakeup(LIGHT_SLEEP_BITMASK, ESP_EXT1_WAKEUP_ANY_HIGH);
   delay(100);
@@ -370,7 +378,7 @@ void audio_task(void *param) {
 }
 
 void loop() {
-  // button 
+  // handle PTT button 
   if (digitalRead(PTTBTN_PIN) == LOW && !btn_pressed_) {
     LOG_DEBUG("PTT pushed, start TX");
     btn_pressed_ = true;
