@@ -21,8 +21,8 @@ volatile bool btn_pressed_ = false;         // true when button is held
 // lora module pinouts (SX1268)
 #define LORA_RADIO_PIN_SS       SS  // NSS pin
 #define LORA_RADIO_PIN_RST      27  // NRST pin
-#define LORA_RADIO_PIN_A        12  // BUSY pin
-#define LORA_RADIO_PIN_B        14  // DIO1 pin
+#define LORA_RADIO_PIN_A        12  // DIO1 pin
+#define LORA_RADIO_PIN_B        14  // BUSY pin
 #define LORA_RADIO_PIN_RXEN     32  // RX enable pin
 #define LORA_RADIO_PIN_TXEN     33  // TX enable pin
 
