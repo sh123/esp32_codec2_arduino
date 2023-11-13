@@ -68,7 +68,7 @@ SX1268 lora_radio_ = new Module(LORA_RADIO_PIN_SS, LORA_RADIO_PIN_A, LORA_RADIO_
 #define AUDIO_MIC_SCK           4       // i2s clock
 
 // audio support
-#define AUDIO_CODEC2_MODE       CODEC2_MODE_450 // codec2 mode
+#define AUDIO_CODEC2_MODE       CODEC2_MODE_700C // codec2 mode
 #define AUDIO_SAMPLE_RATE       8000    // audio sample rate
 #define AUDIO_MAX_PACKET_SIZE   48      // maximum packet size, multiple audio frames are inside
 #define AUDIO_TASK_PLAY_BIT     0x01    // task bit flag to start playback

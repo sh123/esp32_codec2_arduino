@@ -7,6 +7,7 @@
 
 #include "defines.h"
 
+  /* /home/sh/Downloads/codec2/src/codebook/lsp1.txt */
 #ifdef __EMBEDDED__
 static const float codes0[] = {
 #else
@@ -29,6 +30,7 @@ static float codes0[] = {
   575,
   600
 };
+  /* /home/sh/Downloads/codec2/src/codebook/lsp2.txt */
 #ifdef __EMBEDDED__
 static const float codes1[] = {
 #else
@@ -51,6 +53,7 @@ static float codes1[] = {
   675,
   700
 };
+  /* /home/sh/Downloads/codec2/src/codebook/lsp3.txt */
 #ifdef __EMBEDDED__
 static const float codes2[] = {
 #else
@@ -73,6 +76,7 @@ static float codes2[] = {
   1200,
   1250
 };
+  /* /home/sh/Downloads/codec2/src/codebook/lsp4.txt */
 #ifdef __EMBEDDED__
 static const float codes3[] = {
 #else
@@ -95,6 +99,7 @@ static float codes3[] = {
   2100,
   2200
 };
+  /* /home/sh/Downloads/codec2/src/codebook/lsp5.txt */
 #ifdef __EMBEDDED__
 static const float codes4[] = {
 #else
@@ -117,6 +122,7 @@ static float codes4[] = {
   2350,
   2450
 };
+  /* /home/sh/Downloads/codec2/src/codebook/lsp6.txt */
 #ifdef __EMBEDDED__
 static const float codes5[] = {
 #else
@@ -139,6 +145,7 @@ static float codes5[] = {
   2500,
   2600
 };
+  /* /home/sh/Downloads/codec2/src/codebook/lsp7.txt */
 #ifdef __EMBEDDED__
 static const float codes6[] = {
 #else
@@ -161,6 +168,7 @@ static float codes6[] = {
   2900,
   3000
 };
+  /* /home/sh/Downloads/codec2/src/codebook/lsp8.txt */
 #ifdef __EMBEDDED__
 static const float codes7[] = {
 #else
@@ -175,6 +183,7 @@ static float codes7[] = {
   2900,
   3000
 };
+  /* /home/sh/Downloads/codec2/src/codebook/lsp9.txt */
 #ifdef __EMBEDDED__
 static const float codes8[] = {
 #else
@@ -189,6 +198,7 @@ static float codes8[] = {
   3100,
   3200
 };
+  /* /home/sh/Downloads/codec2/src/codebook/lsp10.txt */
 #ifdef __EMBEDDED__
 static const float codes9[] = {
 #else
@@ -201,60 +211,70 @@ static float codes9[] = {
 };
 
 const struct lsp_codebook lsp_cb[] = {
+  /* /home/sh/Downloads/codec2/src/codebook/lsp1.txt */
   {
     1,
     4,
     16,
     codes0
   },
+  /* /home/sh/Downloads/codec2/src/codebook/lsp2.txt */
   {
     1,
     4,
     16,
     codes1
   },
+  /* /home/sh/Downloads/codec2/src/codebook/lsp3.txt */
   {
     1,
     4,
     16,
     codes2
   },
+  /* /home/sh/Downloads/codec2/src/codebook/lsp4.txt */
   {
     1,
     4,
     16,
     codes3
   },
+  /* /home/sh/Downloads/codec2/src/codebook/lsp5.txt */
   {
     1,
     4,
     16,
     codes4
   },
+  /* /home/sh/Downloads/codec2/src/codebook/lsp6.txt */
   {
     1,
     4,
     16,
     codes5
   },
+  /* /home/sh/Downloads/codec2/src/codebook/lsp7.txt */
   {
     1,
     4,
     16,
     codes6
   },
+  /* /home/sh/Downloads/codec2/src/codebook/lsp8.txt */
   {
     1,
     3,
     8,
     codes7
   },
+  /* /home/sh/Downloads/codec2/src/codebook/lsp9.txt */
   {
     1,
     3,
     8,
     codes8
   },
+  /* /home/sh/Downloads/codec2/src/codebook/lsp10.txt */
   {
     1,
     2,

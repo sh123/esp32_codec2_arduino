@@ -33,5 +33,6 @@
 #define CODEC2_VERSION_MINOR 9
 #define CODEC2_VERSION_PATCH 2
 #define CODEC2_VERSION "0.9.2"
+#define GIT_HASH "undefined"
 
 #endif //CODEC2_HAVE_VERSION

@@ -7,6 +7,7 @@
 
 #include "defines.h"
 
+  /* /home/sh/Downloads/codec2/src/codebook/newamp1_energy_q.txt */
 #ifdef __EMBEDDED__
 static const float codes0[] = {
 #else
@@ -31,6 +32,7 @@ static float codes0[] = {
 };
 
 const struct lsp_codebook newamp1_energy_cb[] = {
+  /* /home/sh/Downloads/codec2/src/codebook/newamp1_energy_q.txt */
   {
     1,
     4,

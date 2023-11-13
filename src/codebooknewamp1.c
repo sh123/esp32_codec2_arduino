@@ -7,6 +7,7 @@
 
 #include "defines.h"
 
+  /* /home/sh/Downloads/codec2/src/codebook/train_120_1.txt */
 #ifdef __EMBEDDED__
 static const float codes0[] = {
 #else
@@ -525,6 +526,7 @@ static float codes0[] = {
   18.9039,  18.0327,  13.6297,  9.7561,  7.4319,  5.3744,  2.9646,  1.7415,  0.6716,  0.6859,  2.7446,  0.5342,  -4.3187,  -6.1877,  -6.9311,  -9.8734,  -11.9041,  -9.1281,  -8.9591,  -25.169,
   6.4513,  6.7843,  9.4438,  12.9549,  16.4801,  14.9093,  8.2954,  1.6877,  -2.5193,  -4.4922,  -6.7348,  -6.9853,  -4.6783,  0.7181,  1.0483,  -5.1128,  -1.1161,  -7.5305,  -12.398,  -27.2058
 };
+  /* /home/sh/Downloads/codec2/src/codebook/train_120_2.txt */
 #ifdef __EMBEDDED__
 static const float codes1[] = {
 #else
@@ -1045,12 +1047,14 @@ static float codes1[] = {
 };
 
 const struct lsp_codebook newamp1vq_cb[] = {
+  /* /home/sh/Downloads/codec2/src/codebook/train_120_1.txt */
   {
     20,
     9,
     512,
     codes0
   },
+  /* /home/sh/Downloads/codec2/src/codebook/train_120_2.txt */
   {
     20,
     9,

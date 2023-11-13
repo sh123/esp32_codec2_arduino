@@ -7,6 +7,7 @@
 
 #include "defines.h"
 
+  /* /home/sh/Downloads/codec2/src/codebook/codes_450.txt */
 #ifdef __EMBEDDED__
 static const float codes0[] = {
 #else
@@ -515,6 +516,7 @@ static float codes0[] = {
 };
 
 const struct lsp_codebook newamp2vq_cb[] = {
+  /* /home/sh/Downloads/codec2/src/codebook/codes_450.txt */
   {
     41,
     9,

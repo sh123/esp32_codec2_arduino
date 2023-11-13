@@ -7,6 +7,7 @@
 
 #include "defines.h"
 
+  /* /home/sh/Downloads/codec2/src/codebook/lspjmv1.txt */
 #ifdef __EMBEDDED__
 static const float codes0[] = {
 #else
@@ -525,6 +526,7 @@ static float codes0[] = {
   0.427795,  0.519003,  0.771284,  0.93724,  1.08662,  1.60988,  1.87875,  2.05279,  2.53412,  2.65715,
   0.22437,  0.317969,  0.439666,  0.812931,  1.3985,  1.62663,  1.79418,  2.114,  2.30916,  2.49684
 };
+  /* /home/sh/Downloads/codec2/src/codebook/lspjmv2.txt */
 #ifdef __EMBEDDED__
 static const float codes1[] = {
 #else
@@ -1043,6 +1045,7 @@ static float codes1[] = {
   -0.033256,  -0.053774,  0.049001,  -0.002339,  0.013545,
   -0.006432,  -0.012089,  -0.086842,  0.104105,  0.061991
 };
+  /* /home/sh/Downloads/codec2/src/codebook/lspjmv3.txt */
 #ifdef __EMBEDDED__
 static const float codes2[] = {
 #else
@@ -1563,18 +1566,21 @@ static float codes2[] = {
 };
 
 const struct lsp_codebook lsp_cbjmv[] = {
+  /* /home/sh/Downloads/codec2/src/codebook/lspjmv1.txt */
   {
     10,
     9,
     512,
     codes0
   },
+  /* /home/sh/Downloads/codec2/src/codebook/lspjmv2.txt */
   {
     5,
     9,
     512,
     codes1
   },
+  /* /home/sh/Downloads/codec2/src/codebook/lspjmv3.txt */
   {
     5,
     9,
