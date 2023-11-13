@@ -94,7 +94,7 @@ void setup() {
 
 void audio_task(void *param) {
   // construct and configure codec2
-  c2_ = codec2_create(CODEC2_MODE_700C);
+  c2_ = codec2_create(CODEC2_MODE_3200);
   if (c2_ == NULL) {
     LOG_ERROR("Failed to create Codec2");
     return;
