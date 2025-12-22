@@ -109,7 +109,7 @@ void modem_probe_close_int() {
     dbuf = gather_data(cur->data, &len);
     switch (cur->type) {
       case TRACE_I:
-        octave_save_int(dumpfile, cur->name, (int32_t *)dbuf, 1,
+        octave_save_int(dumpfile, cur->name, (int *)dbuf, 1,
                         len / sizeof(int32_t));
         break;
       case TRACE_F:
