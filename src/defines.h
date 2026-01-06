@@ -35,7 +35,7 @@
 \*---------------------------------------------------------------------------*/
 
 /* General defines */
-
+#define __EMBEDDED__
 #define N_S        0.01         /* internal proc frame length in secs   */
 #define TW_S       0.005        /* trapezoidal synth window overlap     */
 #define MAX_AMP    160		/* maximum number of harmonics          */
