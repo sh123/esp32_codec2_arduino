@@ -29,7 +29,7 @@
 #ifndef __CODEC2__
 #define  __CODEC2__
 #include <stdbool.h>
-#include <codec2/version.h>
+#include <version.h>
 
 #ifdef __cplusplus
   extern "C" {
